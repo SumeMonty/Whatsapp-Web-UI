@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #dddbd1;
+    background-image: linear-gradient(180deg,#dddbd1,#d2dbdc);
+    /* background-image: url('src/example.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.header{
+    width: 100%;
+    height: 127px;
+    background-color: #009688;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
