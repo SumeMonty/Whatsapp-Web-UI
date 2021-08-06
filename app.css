@@ -118,7 +118,20 @@ body{
 }
 
 .chat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
     height: 12.5%;
+}
+
+.chat img {
+    height: 50px;
+    width: 50px; 
+}
+
+.chat h3 {
+    padding-left: 20px;
 }
 
 .chat:hover{
