@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            font-family: Open Sans;
+        }
+
+        .messagescreen {
+            background-color: #a7998b;
+            padding: 15px 10px;
+            width: 50%;
+            min-height: 90vh;
+        } 
+
+        .msg {
+            display:inline-block;
+            padding:5px 6px 8px 6px;
+            border-radius: 6px;
+            /* float: bottom; */
+            
+            color:black;
+            
+            position: relative;
+        }
+
+
+        .msg-incoming {
+            background-color:#fff;
+            float: left;
+            margin-right: 100%;
+            margin-left: 20px;
+        }
+        .msg-outgoing {
+            background-color:rgb(143, 142, 142);
+            float: right;
+            margin-right: 20px;
+            margin-left: 100%;
+        }
+
+        .msg-incoming::before {
+            border-bottom: 12px solid #fff;
+            transform:rotate(45deg);
+        }
+
+        .msg-outgoing::after {
+            border-bottom: 12px solid rgb(143, 142, 142);
+            transform:rotate(-45deg);
+        }
+
+
+        .msg-incoming::before {
+            content: "";
+            position:absolute;
+            margin-top:-11.5px;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;      
+            right: 50px; 
+            top: 10px;      
+        }
+
+        .msg-outgoing::after {
+            content: "";
+            position:absolute;
+            margin-top:-11.5px;
+            margin-left:-5px;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            right: -15px; 
+            top: 10px;
+        }
+
+        
+    </style>
+    <title>WhatsApp Message Block Testing</title>
+</head>
+<body>
+    <div class="messagescreen">
+        <div>
+            <p class="msg msg-incoming">
+                Hello!!!
+            </p>            
+            <p class="msg msg-outgoing">
+                Hello!!!
+            </p>            
+            <p class="msg msg-incoming">
+                Hello!!!
+            </p>            
+            <p class="msg msg-outgoing">
+                Hello!!!
+            </p>            
+            <p class="msg msg-incoming">
+                Hello!!!
+            </p>            
+        </div>
+
+    </div>
+</body>
+</html>
