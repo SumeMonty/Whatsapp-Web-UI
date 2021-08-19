@@ -20,22 +20,22 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+    width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #fff;
+    background: #fff;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #f1f1f1;
+  background: #cccccc;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #f1f1f1;
+  background: #cccccc;
 }
 
 :focus{
@@ -361,8 +361,6 @@ body{
     padding-left: 20px;
     font-size: 17px;
     background-color: #fff;
-    display: flex;
-    align-items: center;
 }
 
 .emoji {
