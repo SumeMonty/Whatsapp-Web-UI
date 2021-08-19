@@ -14,28 +14,28 @@
     -ms-user-select: none;
     /*Internet Explorer/Edge*/
     user-select: none;
-    /* Non-prefixed version, currently 
+    /* Non-prefixed version, currently
                             supported by Chrome and Opera */
 }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #fff; 
+  background: #fff;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
 
 :focus{
@@ -87,7 +87,7 @@ body{
 
 .chat-list div{
     width: 100%;
-    
+
 }
 
 .profile{
@@ -132,7 +132,7 @@ body{
     height: 84.5%;
     overflow-x: hidden;
     overflow-y: auto;
-    
+
 }
 
 .chat{
@@ -143,12 +143,12 @@ body{
     height: 12.5%;
 	cursor: pointer;
 	border-bottom: 1px solid #ededed;
-	
+
 }
 
 .chat>img {
     height: 55px;
-    width: 55px; 
+    width: 55px;
 	border-radius: 50%;
 }
 
@@ -244,11 +244,11 @@ body{
 	height: 20px;
 	background-color: #06d755;
 	border-radius: 50%;
-	margin-right: 10px; 
-	color: #fff; 
+	margin-right: 10px;
+	color: #fff;
 	text-align: center;
     padding-bottom: 2px;
-	
+
 }
 
 #chat-1{
@@ -282,7 +282,7 @@ body{
 }
 
 .name-details{
-	display:flex; 
+	display:flex;
 	flex-direction:column;
 }
 
@@ -316,7 +316,7 @@ body{
 
 #chat-1>.profile-screen>img {
     height: 42px;
-    width: 42px; 
+    width: 42px;
 	border-radius: 50%;
 	margin-left: 10px
 }
@@ -344,17 +344,32 @@ body{
 
 .message-box {
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.message-box>* {
+    margin: 0 10px;
+}
+
+.textmsgbox {
+    width: 90%;
+    height: 70%;
+    border-radius: 19px;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 20px;
+    font-size: 17px;
+    background-color: #fff;
+    display: flex;
     align-items: center;
 }
 
 .emoji {
     height: 30px;
     width: 30px;
-    color: #919191;
 }
-.esend-file {
-    height: 50px;
-    width: 50px;
-    color: #919191;
+.send-file {
+    height: 30px;
+    width: 30px;
 }
