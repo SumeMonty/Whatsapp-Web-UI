@@ -96,6 +96,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+	border-right: 1px solid #c7c7c7;
 }
 
 .profile img{
@@ -141,6 +142,8 @@ body{
     padding-left: 10px;
     height: 12.5%;
 	cursor: pointer;
+	border-bottom: 1px solid #ededed;
+	
 }
 
 .chat>img {
@@ -259,7 +262,7 @@ body{
 }
 
 .message-box{
-	background-color: #06d755;
+	background-color: #f0f0f0;
 	width: 100%;
 	height: 8%;
 }
@@ -267,13 +270,15 @@ body{
 .message-screen{
 	width: 100%;
 	height: 83.5%;
-	background: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+	background: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png") repeat;
 }
 
 .profile-screen{
 	height: 8.5%;
 	width: 100%;
-	background-color: yellow;
+	background-color: #ededed;
+	display: flex;
+	align-items: center;
 }
 
 .name-details{
@@ -298,6 +303,58 @@ body{
 	align-items:center;
 }
 
-.name-details>div>div>div{
+.name-details>span{
+	display: flex;
+	justify-content: space-between;
+}
 
+.name-details>span>p:last-child{
+	font-size: 14px;
+	color: grey;
+	margin-right: 20px;
+}
+
+#chat-1>.profile-screen>img {
+    height: 42px;
+    width: 42px; 
+	border-radius: 50%;
+	margin-left: 10px
+}
+
+.chat-name{
+	margin-left: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+
+.chat-name>div>div>p{
+	font-size: 14px;
+	color: grey;
+}
+
+.chat-name>span>img{
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.message-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.emoji {
+    height: 30px;
+    width: 30px;
+    color: #919191;
+}
+.esend-file {
+    height: 50px;
+    width: 50px;
+    color: #919191;
 }
