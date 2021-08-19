@@ -1,3 +1,6 @@
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+
 // var chat = document.getElementsByClassName('chat');
 let connectphone = document.getElementById('div-connectphone');
 let chat1 = document.getElementById('chat-1');

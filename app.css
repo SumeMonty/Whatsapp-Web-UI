@@ -152,11 +152,26 @@ body{
 .chat p {
     padding-left: 20px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .chat:hover{
     background-color: #f5f5f5;
+}
+
+.archieve{
+	height: 8%;
+}
+
+.archieve>img{
+	width: 18px;
+	height: 18px;
+	border-radius: 0%;
+	margin-left: 20px;
+}
+
+.archieve:hover{
+	background-color: #fff;
 }
 
 #profile-image{
@@ -230,6 +245,7 @@ body{
 	color: #fff; 
 	text-align: center;
     padding-bottom: 2px;
+	
 }
 
 #chat-1{
@@ -258,4 +274,30 @@ body{
 	height: 8.5%;
 	width: 100%;
 	background-color: yellow;
+}
+
+.name-details{
+	display:flex; 
+	flex-direction:column;
+}
+
+.name-details>div{
+	display:flex;
+	justify-content:space-between;
+}
+
+.name-details>div>p{
+	font-size:14px;
+	color:grey;
+}
+
+.name-details>div>div{
+	display:flex;
+	justify-content:flex-end;
+	width:100px;
+	align-items:center;
+}
+
+.name-details>div>div>div{
+
 }
